@@ -4,6 +4,15 @@ import Home from './Home';
 import Dashboard from './Dashboard'
 
 class App extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      loggedInStatus: "NOT_LOGGED_IN",
+      user: {}
+    }
+  } 
+
   render() {
     return(
       <BrowserRouter>
